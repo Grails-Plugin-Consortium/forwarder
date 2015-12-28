@@ -104,6 +104,7 @@
             </ul>
         </div>
         <div id="page-body" role="main">
+            <g:link controller="tardis" action="index">URI Redirect using interceptor</g:link><BR />
             <g:link controller="space" action="index">URI Redirect using new object</g:link><BR />
             <g:link controller="space" action="uri">URI Redirect using spring bean</g:link><BR />
             <g:link controller="space" action="uri2">URI Redirect using spring bean 2</g:link><BR />
