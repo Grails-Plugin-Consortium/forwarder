@@ -109,9 +109,25 @@
             <g:link controller="space" action="uri2">URI Redirect using spring bean 2</g:link><BR />
             <g:link controller="space" action="uri3">URI Redirect using spring bean 3</g:link><BR />
             <g:link controller="space" action="uriAbsolute">URI Redirect using custom uri absolute</g:link><BR />
-            <g:link controller="space" action="uriRelative">URI Redirect using custom uri relative (will break)</g:link><BR />
+            <g:link controller="space" action="uriRelative">URI Redirect using custom uri relative</g:link><BR />
             <g:link controller="space" action="uriAbsoluteBase">URI Redirect using custom uri absolute with base version</g:link><BR />
             <g:link controller="space" action="uriRelativeBase">URI Redirect using custom uri relative with base version (will break)</g:link><BR />
+
+            <p>
+            Url Mappings:
+                <pre>
+"/"(view: '/index')
+"/space"(controller: 'space', action: 'index')
+"/uri"(controller: 'space', action: 'uri')
+"/uri2"(controller: 'space', action: 'uri2')
+"/uri3"(controller: 'space', action: 'uri3')
+"/uri4"(controller: 'space', action: 'uri4')
+"/lost"(controller: 'space', action: 'space')
+"/$version/lost"(controller: 'space', action: 'space')
+"500"(view: '/error')
+"404"(view: '/notFound')
+        </pre>
+            </p>
         </div>
     </body>
 </html>
