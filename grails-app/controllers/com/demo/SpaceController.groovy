@@ -12,15 +12,23 @@ class SpaceController {
     }
 
     def uri(){
-        def uri = grailsLinkGenerator.link(controller: 'space', action: 'lost')
+        def uri = grailsLinkGenerator.link(controller: 'space', action: 'space')
         doctorWhoUri.forward(uri: uri)
     }
 
-    def time(){
-        render "You are somewhere in time"
+    def uri2(){
+        doctorWhoUri.forward()
     }
 
-    def lost() {
+    def uri3(){
+        doctorWhoUri.uri()
+    }
+
+    def time(){
+        render "You are now lost in time"
+    }
+
+    def space() {
         render "You are now lost in space"
     }
 }

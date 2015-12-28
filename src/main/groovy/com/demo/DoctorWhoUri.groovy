@@ -10,4 +10,13 @@ class DoctorWhoUri implements RequestForwarder {
 
 	@Autowired
 	LinkGenerator grailsLinkGenerator
+
+	String forward() {
+		forward(uri: grailsLinkGenerator.link(controller: 'space', action: 'space'))
+	}
+
+	String uri() {
+		forward(uri: grailsLinkGenerator.link(uri: '/space/space'))
+	}
+
 }
