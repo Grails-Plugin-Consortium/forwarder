@@ -59,6 +59,7 @@ class SpaceController {
     }
 
     def space() {
+        log.info "Param one: ${params.one}"
         render "You are now lost in space"
     }
 }
