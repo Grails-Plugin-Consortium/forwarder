@@ -108,6 +108,10 @@
             <g:link controller="space" action="uri">URI Redirect using spring bean</g:link><BR />
             <g:link controller="space" action="uri2">URI Redirect using spring bean 2</g:link><BR />
             <g:link controller="space" action="uri3">URI Redirect using spring bean 3</g:link><BR />
+            <g:link controller="space" action="uriAbsolute">URI Redirect using custom uri absolute</g:link><BR />
+            <g:link controller="space" action="uriRelative">URI Redirect using custom uri relative (will break)</g:link><BR />
+            <g:link controller="space" action="uriAbsoluteBase">URI Redirect using custom uri absolute with base version</g:link><BR />
+            <g:link controller="space" action="uriRelativeBase">URI Redirect using custom uri relative with base version (will break)</g:link><BR />
         </div>
     </body>
 </html>
